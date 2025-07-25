@@ -3,8 +3,8 @@ import "./globals.css";
 import ReduxProvider from "@/redux/Provider";
 
 export const metadata = {
-  title: "App - Test",
-  description: "By Rakib",
+  title: "Quiz App",
+  description: "Bran Station",
 };
 
 export default function RootLayout({ children }) {
@@ -12,11 +12,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <ReduxProvider>
-          <div className="max-w-[990px] px-5 pb-10 mx-auto">
-            {/* <Navbar /> */}
-
-            {children}
-          </div>
+          <Navbar />
+          {children}
         </ReduxProvider>
       </body>
     </html>

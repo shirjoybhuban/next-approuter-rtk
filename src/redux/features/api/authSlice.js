@@ -18,5 +18,15 @@ export const authSlice = createSlice({
   },
 });
 export const selectCurrentUser = (state) => state.auth.user;
+export const selectIsAdmin = (state) => state.auth.user?.role === 'admin';
+export const selectUserRole = (state) => state.auth.user?.role;
+export const selectIsAuthenticated = (state) => !!state.auth.user;
+
+// Utility function to check if user has any of the specified roles
+export const selectHasRole = (state, roles) => {
+  const userRole = state.auth.user?.role;
+  return userRole && roles.includes(userRole);
+};
+
 export const { setUser, clearUser } = authSlice.actions;
 export default authSlice.reducer;

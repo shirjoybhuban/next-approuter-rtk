@@ -1,5 +1,6 @@
 {
-  "name": "app-router-testing",
+  "name": "quiz-app",
+  "description": "Quiz App",
   "version": "0.1.0",
   "private": true,
   "scripts": {

@@ -1,13 +1,14 @@
 
-import RTKHome from "@/components/RTKHome";
+
+
+import StudentQuiz from '@/components/StudentQuiz';
 
 export default function Home() {
 
   return (
-    <main>
-     <h1 className="text-7xl font-bold text-blue-600">Hello Tailwind in Next.js 15</h1>
-      <br />
-      <RTKHome/>
+    <main className="container mx-auto px-4 py-8">
+      <h1 className="text-4xl font-bold text-blue-600 mb-8 text-center">Hello Students</h1>
+      <StudentQuiz />
     </main>
   );
 }
